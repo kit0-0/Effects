@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+section
+{width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(back.jpeg);
+    background-size: cover;
+    filter: blur(10px);
+    transition: 2s;
+}
+
+.logo{
+    position: relative;
+    z-index: 1;
+    max-width: 200px;
+    transition: 2s;
+    
+}
+.logo :hover{
+    filter: blur(10px);
+    transform: scale(2);
+    -webkit-filter: blur(10px);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+.logo:hover ~.back{
+    filter: blur(10px);
+    transform: scale(2);
+    -webkit-filter: blur(10px);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
